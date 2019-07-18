@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Build a Survey Form</title>
+</head>
+
+<body>
+  <main>
+    <h1 id="title">Survey Form</h1>
+    <p id="description"></p>
+  </main>
+  <form id="suvery-form">
+    <ul>
+      <h3>
+
+        <label id="name">Name</label>
+        <input id="name" required placeholder="Full Name">
+
+      </h3>
+      <h3>
+
+        <label id="email">Email</label>
+        <input id="email" required placeholder="Email" type="email">
+
+      </h3>
+      <h3>
+
+        <label id="number-label">Age</label>
+        <input id="number" required placeholder="Age" type="number" min="1" max="100">
+
+      </h3>
+      <h3>
+
+        <label id="dropdown-label">Favorite Game</label>
+        <select id="dropdown">
+          <option>Game List</option>
+          <option>Scrabble</option>
+          <Option>Monopoly</Option>
+        </select>
+      </h3>
+    </ul>
+  </form>
+  <div class="rowTab"></div>
+  <div id="labels">
+    <h1><label for="userRating">Games for Which Age Group</label></h1>
+  </div>
+  <div>
+
+    <p>
+      <h1>
+        <form id="buttons">
+
+          <label><input type="radio" name="Age2-4">Age 2-4 </label>
+          <label><input type="radio" name="Age5-8">Age 5-8 </label>
+          <label><input type="checkbox" name="Age9-12">Age 9-12 </label>
+          <label><input type="Checkbox" name="Age13-over">Age 13-over </label>
+
+          <input type="text" placeholder="Indoor/outdoor game" required>
+          <button type="submit">Sumbmit</button>
+        </form>
+      </h1>
+    </p>
+
+  </div>
+</body>
+<style>
+  main {
+    text-align: center;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  p {
+    text-align: center
+  }
+
+  ul {
+    background-color: white;
+    width: 75%;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 35px;
+  }
+
+  input {
+    height: 30px;
+    width: 100%;
+  }
+
+  select {
+    height: 30px;
+    width: 100%;
+  }
+
+  label {
+    float: left;
+    font-size: 20px;
+    margin: 10px 0 10px 0;
+  }
+</style>
+
+</html>
